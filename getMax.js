@@ -15,3 +15,22 @@ const getMax = (arr) => {
 };
 
 console.log(getMax([]));
+
+// All the movies in 2018 with rating > 4
+// Sort thm by rating
+// In Descending order
+// Only pich their title
+
+const movies = [
+  { title: "a", year: 2018, rating: 4.5 },
+  { title: "b", year: 2018, rating: 4.3 },
+  { title: "c", year: 2019, rating: 4.0 },
+  { title: "d", year: 2018, rating: 3 },
+];
+
+const title = movies
+  .filter((m) => m.year === 2018 && m.rating > 4)
+  .sort((a, b) => b.rating - a.rating)
+  .map((m) => m.title);
+
+console.log(title);
