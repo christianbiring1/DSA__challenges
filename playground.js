@@ -12,4 +12,11 @@ function Table(n) {
   }
 }
 
-Table(10);
+// Table(10);
+// Receive a string and return the corresponding 12h format
+function ConvertTime(t) {
+  // realhour = time - 12;
+  //return realhour > 0 ? "realhour: minute PM" ? "time: minute AM"
+}
+
+console.log(ConvertTime("02:30 AM"))
